@@ -14,6 +14,15 @@ dependencies:
   react-dom:
     specifier: 19.0.0-rc-7c8e5e7a-20241101
     version: 19.0.0-rc-7c8e5e7a-20241101(react@19.0.0-rc-7c8e5e7a-20241101)
+  server-act:
+    specifier: ^1.3.1
+    version: 1.3.1(typescript@5.3.3)(zod@3.23.8)
+  zod:
+    specifier: ^3.23.8
+    version: 3.23.8
+  zod-form-data:
+    specifier: ^2.0.2
+    version: 2.0.2(zod@3.23.8)
 
 devDependencies:
   '@types/node':
@@ -484,6 +493,19 @@ packages:
     dev: false
     optional: true
 
+  /server-act@1.3.1(typescript@5.3.3)(zod@3.23.8):
+    resolution: {integrity: sha512-XH/lCfi3H2Q/v83X5Fr4A85wanysK9LsvPglOeQkV+eQemOQonjcXnmmZLmpGIsVm6MfZMs2SLApRVx8UztwmQ==}
+    peerDependencies:
+      typescript: '>=5.0.0'
+      zod: ^3.22.2
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      typescript: 5.3.3
+      zod: 3.23.8
+    dev: false
+
   /sharp@0.33.5:
     resolution: {integrity: sha512-haPVm1EkS9pgvHrQ/F3Xy+hgcuMV0Wm9vfIBSiwZ05k+xgb0PkBQpGsAA/oWdDobNaZTH5ppvHtzCFbnSEwHVw==}
     engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
@@ -558,8 +580,19 @@ packages:
     resolution: {integrity: sha512-pXWcraxM0uxAS+tN0AG/BF2TyqmHO014Z070UsJ+pFvYuRSq8KH8DmWpnbXe0pEPDHXZV3FcAbJkijJ5oNEnWw==}
     engines: {node: '>=14.17'}
     hasBin: true
-    dev: true
 
   /undici-types@5.26.5:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
     dev: true
+
+  /zod-form-data@2.0.2(zod@3.23.8):
+    resolution: {integrity: sha512-sKTi+k0fvkxdakD0V5rq+9WVJA3cuTQUfEmNqvHrTzPLvjfLmkkBLfR0ed3qOi9MScJXTHIDH/jUNnEJ3CBX4g==}
+    peerDependencies:
+      zod: '>= 3.11.0'
+    dependencies:
+      zod: 3.23.8
+    dev: false
+
+  /zod@3.23.8:
+    resolution: {integrity: sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==}
+    dev: false
